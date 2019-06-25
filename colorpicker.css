@@ -7,3 +7,49 @@
   object-fit: cover;
 
   }
+  #title {
+    font-size: 4em;
+    color: #4c372c ;
+    font-family: 'Georgia';
+    font-weight: bold;
+  }
+
+.halfrow {
+  background-color: #4c372c;
+  color: #fafafb;
+  margin: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.color {
+  height: 25vh;
+  border: 1px black;
+}
+
+#color1{
+  background-color: #c7ae96;
+}
+
+#color2{
+  background-color: #d8915d;
+}
+
+#color3{
+  background-color: #c7ae96;
+}
+
+#color4{
+  background-color: #d8915d;
+}
+
+#color5{
+  background-color: #c7ae96;
+}
+
+#pickacolor{
+  height: 60vh;
+  width: 100%;
+  padding-top:30vh;
+  text-align: center;
+}

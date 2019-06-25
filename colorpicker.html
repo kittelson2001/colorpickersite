@@ -4,7 +4,7 @@
 
 <head>
 
-  <title>Your Name</title>
+  <title>Amanda Kittelson</title>
 
   <meta charset="utf-8">
 
@@ -20,7 +20,19 @@
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+  <script>
+  function randomColor() {
+var red = Math.floor(Math.random() * 256);
+var green = Math.floor(Math.random() * 256);
+var blue = Math.floor(Math.random() * 256);
 
+var divtoedit = document.getElementById('pickacolor');
+divtoedit.style.backgroundColor = 'rgb('+red+','+green+','+blue+')';
+
+document.getElementById('colorGenerated').innerHTML = 'rgb('+red+','+green+','+blue+')';
+  }
+
+</script>
 
   <!-- Our style sheet where we can customize parts of our page further -->
 
@@ -40,7 +52,7 @@
 
       <div class="col-sm-12">
 
-        <span id=title>About YOUR NAME</span>
+        <span id=title>About Amanda</span>
 
       </div>
 
@@ -50,11 +62,47 @@
 
       <div class="col-sm-12">
 
-        <img id=coverimage src="imgs/coverimage.jpg" alt="flowers on a table">
+        <img id=coverimage src="imgs/coverimage.jpg" alt="mountain view">
 
       </div>
 
     </div>
+    <div class=row>
+      <div class= "col-sm-6">
+        <div class= "halfrow">
+          My favorite Number: <br>
+          6
+          </div>
+      </div>
+      <div class= "col-sm-6">
+        <div class= "halfrow">
+          My Favorite Song: <br>
+          <a href= 'https://www.youtube.com/watch?v=2Vv-BfVoq4g'> 'Perfect' -Ed Sheeran</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+      <div class= "col-md-2 col-md-offset-1 color" id="color1">
+        </div>
+        <div class="col-md-2 color" id="color2">
+        </div>
+        <div class="col-md-2 color" id="color3">
+        </div>
+        <div class="col-md-2 color" id="color4">
+        </div>
+        <div class="col-md-2 color" id="color5">
+        </div>
+      </div>
+      <div class=row>
+        <div class="col-sm-12" id="pickacolor">
+          <button class="btn btn-default" onclick=randomColor()>
+            Get Random color
+            </button>
+            <br/><br/>
+            <p id="colorGenerated"></p>
+
 </div>
 
 </body>
